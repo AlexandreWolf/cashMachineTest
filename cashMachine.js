@@ -24,7 +24,7 @@ function cashMachine(cash) {
     const notes = Math.floor(missingValue / note);
 
     // getting the remaining amount to be processed in the next note
-    missingValue -= (notes * note);
+    missingValue -= notes * note;
 
     return notes;
   });
@@ -36,5 +36,3 @@ function cashMachine(cash) {
     ${moneyNotes[2]} notas de R$5,00 e ${moneyNotes[3]} notas de R$1,00`
   );
 }
-
-cashMachine(82);
